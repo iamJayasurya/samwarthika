@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+body{background:#fff !important;}
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary:#649923;
+  --secondary:#384D1F
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+ --font-mulish: 'Mulish', sans-serif;
+}
+@theme {
+  --breakpoint-xsm: 30rem;
+  --breakpoint-mlg: 62rem;
+  --breakpoint-xxl: 1500px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mulish);
+}
+
+.header.header.sticky{
+  background-color: #fff;
+}
+
+.border-gn-700{
+  color:var(--primary);
+}
